@@ -6,7 +6,7 @@
     <title>Caique Zaniolo - LinkedIn Summary</title>
     <style>
         body, html {
-            margin: 15px;
+            margin: 0;
             padding: 0;
             height: 100%;
             font-family: 'Arial', sans-serif;
@@ -23,6 +23,18 @@
             padding: 20px;
             max-width: 400px;
             text-align: center;
+            position: relative;
+        }
+
+        .top-container {
+            background-color: #F0F0F0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 45%; /* This will make the rectangle cover the top half */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         img {
@@ -32,11 +44,14 @@
             object-fit: cover;
             border: 6px solid white;
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%); /* This will center the image vertically */
         }
 
         h1 {
             font-size: 1.5rem;
-            margin-top: 15px;
+            margin-top: 100px;
             color: #0073b1;
         }
 
@@ -74,8 +89,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="top-container">
+        
+            <h1>Caique Zaniolo</h1>
+        </div>
         <img src="caique.jpg" alt="Caique Zaniolo">
-        <h1>Caique Zaniolo</h1>
         <p>Experienced Product Leader and VP of Products at Cyferd, with a focus on enabling organizations to build interconnected applications through a Composable Solutions Platform.</p>
         <a href="https://www.linkedin.com/in/caiquezaniolo" target="_blank">View LinkedIn Profile</a>
     </div>
