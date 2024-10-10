@@ -3,32 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaniolo</title>
+    <title>Caique Zaniolo - LinkedIn Summary</title>
     <style>
         body, html {
-            height: 100%;
             margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f2ef;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #ff7e5f, #feb47b);
-            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #0073b1;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #0073b1;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #005582;
         }
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 3rem;
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 <body>
-    <h1>zaniolo.me</h1>
+    <div class="container">
+        <a href="https://www.linkedin.com/in/caiquezaniolo" target="_blank">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFBW9JdxZZO6w/profile-displayphoto-shrink_400_400/0/1686901242416?e=1700697600&v=beta&t=7RWcdKoXSJ7aKxFwOba4iB45pYJSUD-DgC6iB0SmFCM" alt="Caique Zaniolo">
+        </a>
+        <h1>Caique Zaniolo</h1>
+        <p>Experienced Product Leader and VP of Products at Cyferd, with a focus on enabling organizations to build interconnected applications through a Composable Solutions Platform.</p>
+        <a href="https://www.linkedin.com/in/caiquezaniolo" target="_blank">View LinkedIn Profile</a>
+    </div>
 </body>
 </html>
